@@ -1,0 +1,102 @@
+.interactive-gif {
+}
+
+.interactive-gif .embedded {
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+
+.interactive-gif .loading,
+.interactive-gif .still-container,
+.interactive-gif .gif-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.interactive-gif .still,
+.interactive-gif .gif {
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+}
+
+.interactive-gif .loading .indicator {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 80px;
+	filter: contrast(0.5);
+}
+
+.interactive-gif .still-container .play {
+	cursor: pointer;
+	width: 20%;
+	position: absolute;
+	opacity: 0.9;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.interactive-gif .placeholder {
+	filter: grayscale(100%);
+	text-align: center;
+}
+
+.interactive-gif .placeholder img {
+	width: 200px;
+}
+
+blockquote {
+	width: 60%;
+	margin: 50px auto;
+	font-family: 'Futura Std';
+	font-style: italic;
+	color: #555555;
+	padding: 1.2em 30px 1.2em 75px;
+	border-left: 8px solid #78c0a8;
+	line-height: 1.6;
+	position: relative;
+	background: #ededed;
+}
+
+blockquote::before {
+	font-family: Arial;
+	content: '\201C';
+	color: #78c0a8;
+	font-size: 4em;
+	position: absolute;
+	left: 10px;
+	top: -10px;
+}
+
+blockquote::after {
+	content: '';
+}
+
+blockquote ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+blockquote li {
+	display: block;
+	color: #333333;
+	font-style: normal;
+	font-weight: 400;
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+}
+
+code {
+	color: #555;
+	font-size: 16px;
+	padding: 0px;
+	font-family: 'Futura Std';
+	line-height: 30px;
+}
